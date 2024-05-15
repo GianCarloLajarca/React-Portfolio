@@ -74,12 +74,11 @@ const Skill = () => {
                 
             </div>
 
-            <div className='tab flex justify-between items-center mt-8 border-b border-line mb-8'>
-                <h2>Search</h2>
-                <button className='btn btn--accent' onClick={handleAdd}>
-                    <FiPlus /> New
-                </button>
-            </div>
+            <div className='tab flex justify-end items-center mt-8 border-b border-line mb-8 pb-4'>
+                    <button className='btn btn--accent text-primary border border-accent hover:bg-primary hover:text-accent hover:border hover:border-accent' onClick={handleAdd}>
+                        <FiPlus /> New
+                    </button>
+                </div>
 
             <SkillTable isLoading={isLoading} skill={skill} isFetching={isFetching} setItemEdit={setItemEdit}/>
         </div>
