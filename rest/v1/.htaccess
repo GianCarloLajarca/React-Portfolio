@@ -1,0 +1,72 @@
+RewriteEngine On
+# use for authentication
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+Header set Access-Control-Allow-Origin *
+
+#################################### ALL FOR DEVELOPER #################################
+RewriteRule ^upload/photo$ core/upload-photo.php [L]
+
+### SETTING ROLES ###
+RewriteRule ^skill$ controllers/skill/skill.php [L]
+RewriteRule ^skill/([0-9]+)$ controllers/skill/skill.php?skillid=$1 [L]
+RewriteRule ^skill/active/([0-9]+)$ controllers/skill/active.php?skillid=$1 [L]
+RewriteRule ^skill/search$ controllers/skill/search.php [L]
+
+RewriteRule ^service$ controllers/service/service.php [L]
+RewriteRule ^service/([0-9]+)$ controllers/service/service.php?serviceid=$1 [L]
+RewriteRule ^service/active/([0-9]+)$ controllers/service/active.php?serviceid=$1 [L]
+RewriteRule ^service/search$ controllers/service/search.php [L]
+
+RewriteRule ^about$ controllers/about/about.php [L]
+RewriteRule ^about/([0-9]+)$ controllers/about/about.php?aboutid=$1 [L]
+RewriteRule ^about/active/([0-9]+)$ controllers/about/active.php?aboutid=$1 [L]
+RewriteRule ^about/search$ controllers/about/search.php [L]
+
+RewriteRule ^experience$ controllers/experience/experience.php [L]
+RewriteRule ^experience/([0-9]+)$ controllers/experience/experience.php?experienceid=$1 [L]
+RewriteRule ^experience/active/([0-9]+)$ controllers/experience/active.php?experienceid=$1 [L]
+RewriteRule ^experience/search$ controllers/experience/search.php [L]
+
+RewriteRule ^honor$ controllers/honor/honor.php [L]
+RewriteRule ^honor/([0-9]+)$ controllers/honor/honor.php?honorid=$1 [L]
+RewriteRule ^honor/active/([0-9]+)$ controllers/honor/active.php?honorid=$1 [L]
+RewriteRule ^honor/search$ controllers/honor/search.php [L]
+
+RewriteRule ^top$ controllers/top/top.php [L]
+RewriteRule ^top/([0-9]+)$ controllers/top/top.php?topid=$1 [L]
+RewriteRule ^top/active/([0-9]+)$ controllers/top/active.php?topid=$1 [L]
+RewriteRule ^top/search$ controllers/top/search.php [L]
+
+RewriteRule ^certificate$ controllers/certificate/certificate.php [L]
+RewriteRule ^certificate/([0-9]+)$ controllers/certificate/certificate.php?certificateid=$1 [L]
+RewriteRule ^certificate/active/([0-9]+)$ controllers/certificate/active.php?certificateid=$1 [L]
+RewriteRule ^certificate/search$ controllers/certificate/search.php [L]
+
+RewriteRule ^project$ controllers/project/project.php [L]
+RewriteRule ^project/([0-9]+)$ controllers/project/project.php?projectid=$1 [L]
+RewriteRule ^project/active/([0-9]+)$ controllers/project/active.php?projectid=$1 [L]
+RewriteRule ^project/search$ controllers/project/search.php [L]
+
+RewriteRule ^banner$ controllers/banner/banner.php [L]
+RewriteRule ^banner/([0-9]+)$ controllers/banner/banner.php?bannerid=$1 [L]
+RewriteRule ^banner/active/([0-9]+)$ controllers/banner/active.php?bannerid=$1 [L]
+RewriteRule ^banner/search$ controllers/banner/search.php [L]
+
+RewriteRule ^education$ controllers/education/education.php [L]
+RewriteRule ^education/([0-9]+)$ controllers/education/education.php?educationid=$1 [L]
+RewriteRule ^education/active/([0-9]+)$ controllers/education/active.php?educationid=$1 [L]
+RewriteRule ^education/search$ controllers/education/search.php [L]
+
+RewriteRule ^cta$ controllers/cta/cta.php [L]
+RewriteRule ^cta/([0-9]+)$ controllers/cta/cta.php?ctaid=$1 [L]
+RewriteRule ^cta/active/([0-9]+)$ controllers/cta/active.php?ctaid=$1 [L]
+RewriteRule ^cta/search$ controllers/cta/search.php [L]
+
+RewriteRule ^contact$ controllers/contact/contact.php [L]
+RewriteRule ^contact/([0-9]+)$ controllers/contact/contact.php?contactid=$1 [L]
+RewriteRule ^contact/active/([0-9]+)$ controllers/contact/active.php?contactid=$1 [L]
+RewriteRule ^contact/search$ controllers/contact/search.php [L]
