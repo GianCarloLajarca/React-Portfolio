@@ -52,8 +52,8 @@ const ModalAddSkill = ({itemEdit}) => {
   }
 
   const yupSchema = Yup.object({
-    //   skill_title: Yup.string().required('Required'),
-      skill_photo: Yup.string().required('Required'),
+      skill_title: Yup.string().required('Required'),
+      // skill_photo: Yup.string().required('Required'),
       skill_description: Yup.string().required('Required'),
       skill_publish_date: Yup.string().required('Required'),
   })

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 15, 2024 at 02:58 AM
+-- Generation Time: May 15, 2024 at 03:46 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -241,7 +241,7 @@ CREATE TABLE `honor` (
 --
 
 INSERT INTO `honor` (`honor_aid`, `honor_title`, `honor_photo`, `honor_is_active`, `honor_publish_date`, `honor_date`, `honor_giver`, `honor_created`, `honor_datetime`) VALUES
-(1, 'Third Honor Awardee - Second Semester of A.Y. 2022', '../../img/home/honor-1.jpg', 1, '5/13/2024', 'November 2023', 'De La Salle Lipa', '2024-05-13 20:55:14', '2024-05-13 20:55:14'),
+(1, 'Third Honor Awardee - Second Semester of A.Y. 2022', '../../img/home/honor-1.jpg', 1, '5/13/2024', 'November 2023', 'De La Salle Lipa', '2024-05-13 20:55:14', '2024-05-15 09:40:00'),
 (2, 'Second Honor Awardee - First Semester of A.Y. 2022', '../../img/home/honor-2.jpg', 1, '5/13/2024', 'April 2021', 'De La Salle Lipa', '2024-05-13 20:57:20', '2024-05-13 21:12:30'),
 (3, 'First Honor Awardee - Second Semester of A.Y. 2021', '../../img/home/honor-3.png', 1, '5/13/2024', 'December 2021', 'De La Salle Lipa', '2024-05-13 20:58:19', '2024-05-13 20:58:19'),
 (4, 'First Honor Awardee - First Semester of A.Y. 2021-', '../../img/home/honor-4.png', 1, '5/13/2024', 'May 2022', 'De La Salle Lipa', '2024-05-13 20:59:26', '2024-05-13 20:59:26'),
@@ -500,7 +500,7 @@ ALTER TABLE `education`
 -- AUTO_INCREMENT for table `experience`
 --
 ALTER TABLE `experience`
-  MODIFY `experience_aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `experience_aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `honor`
