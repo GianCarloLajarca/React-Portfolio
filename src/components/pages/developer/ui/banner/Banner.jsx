@@ -53,12 +53,12 @@ const Banner = () => {
             </div>
         </div>
 
-        <div className='banner-profilepic object-cover size-[550px]'>
+        <div className='banner-profilepic object-cover size-[550px] '>
             <div className='banner-img'>
-                <img src={`${devBaseImgUrl}/${item.banner_photo}`} alt="" className='absolute w-[700px] h-[800px] object-cover'/>
+                <img src={`${devBaseImgUrl}/${item.banner_photo}`} alt="" className='absolute w-[700px] h-[800px] object-cover translate-y-[-0.5rem]'/>
             </div>
         </div>
-      <div  className='banner-scroll rotate-90 absolute translate-y-[44rem] translate-x-[100rem] '>
+      <div  className='banner-scroll rotate-90 absolute translate-y-[42rem] translate-x-[100rem] '>
             <h4 className='flex flex-row items-center gap-5 uppercase text-md text-accent font-normal' >Scroll Down <MdArrowRightAlt className='text-3xl'/></h4>
       </div>
     </div>
